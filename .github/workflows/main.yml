@@ -16,4 +16,8 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - name: Try to connect FTP
-      run: FTP verifiedproperties.in
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        FTP_SERVER: verifiedproperties.in 
+        FTP_USERNAME:  xxxx
+        FTP_PASSWORD:  xxxx
